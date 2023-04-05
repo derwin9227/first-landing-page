@@ -4,7 +4,8 @@
   "description": "��#\u0000 \u0000f\u0000i\u0000r\u0000s\u0000t\u0000-\u0000l\u0000a\u0000n\u0000d\u0000i\u0000n\u0000g\u0000-\u0000p\u0000a\u0000g\u0000e\u0000\r\u0000 \u0000",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/estilos.css -w"
+    
   },
   "repository": {
     "type": "git",
