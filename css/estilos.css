@@ -18,6 +18,20 @@ body {
   font-size: 1.5rem;
   background-color: #ffa0ff; }
 
+.btn {
+  border: none;
+  border-radius: 3px;
+  color: azure;
+  background-color: blueviolet;
+  width: 6rem;
+  height: 3rem; }
+  .btn:hover {
+    box-shadow: 2rem 1rem 5rem rgba(255, 160, 255, 0.3) inset; }
+
+.btn-centrar {
+  margin-left: 50%;
+  transform: translate(-50%, -50%); }
+
 .navbar {
   position: fixed;
   width: 100%; }
@@ -62,6 +76,12 @@ body {
     gap: 2rem; }
     .principal__contenedor--texto {
       background-color: #ffaf00; }
+      .principal__contenedor--texto .titulo__principal {
+        margin-top: .5rem;
+        margin-bottom: .5rem; }
+    .principal__contenedor--parrafo {
+      padding: 2rem;
+      text-align: justify; }
     .principal__contenedor--imagen {
       background-color: #ffa0ff;
       overflow: hidden; }

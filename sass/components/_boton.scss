@@ -1,0 +1,18 @@
+.btn{
+    border: none;
+    border-radius: 3px;
+    color: azure;
+    background-color: blueviolet;
+    width: 6rem;
+    height: 3rem;
+
+    &:hover{
+        box-shadow: 2rem 1rem 5rem rgba($color-base, 0.3) inset;
+    }
+}
+
+.btn-centrar{
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    
+}

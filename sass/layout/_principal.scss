@@ -17,6 +17,16 @@
 
         &--texto{
             background-color: $color-base-2;
+
+            .titulo__principal{
+                margin-top: .5rem;
+                margin-bottom: .5rem;
+            }
+        }
+
+        &--parrafo{
+            padding: 2rem;
+            text-align: justify;
         }
 
         &--imagen{
