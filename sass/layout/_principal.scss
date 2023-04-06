@@ -1,0 +1,29 @@
+.principal{
+    height: 90vh;
+    width: 100%;
+    background-color: bisque;
+
+
+    &__contenedor{
+        height: 90%;
+        background-color: #fa6;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 2rem;
+        
+
+        &--texto{
+            background-color: $color-base-2;
+        }
+
+        &--imagen{
+            background-color: $color-base;
+            overflow: hidden;
+
+            &-img{
+                height: 90%;
+                width: 100%;
+            }
+        }
+    }
+}

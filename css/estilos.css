@@ -1,7 +1,7 @@
 *, *::after, *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 html {
   font-size: 62.5%; }
@@ -9,7 +9,44 @@ html {
 body {
   font-family: Helvetica, Arial,  sans-serif;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 2;
   box-sizing: border-box;
-  padding: 3rem;
-  font-size: 1.5rem; }
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: #ffa0ff; }
+
+.navbar {
+  background-color: #af0;
+  width: 100%; }
+  .navbar__list {
+    font-weight: 700;
+    text-align: end;
+    padding-right: 1rem; }
+  .navbar__item {
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: aqua;
+    border-radius: 2px; }
+    .navbar__item:not(:last-child) {
+      margin-right: .5rem; }
+  .navbar__link {
+    text-decoration: none; }
+
+.principal {
+  height: 90vh;
+  width: 100%;
+  background-color: bisque; }
+  .principal__contenedor {
+    height: 90%;
+    background-color: #fa6;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem; }
+    .principal__contenedor--texto {
+      background-color: #ffaf00; }
+    .principal__contenedor--imagen {
+      background-color: #ffa0ff;
+      overflow: hidden; }
+      .principal__contenedor--imagen-img {
+        height: 90%;
+        width: 100%; }
