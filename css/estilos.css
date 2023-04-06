@@ -1,3 +1,6 @@
+.centrar-texto {
+  text-align: center; }
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -16,34 +19,41 @@ body {
   background-color: #ffa0ff; }
 
 .navbar {
-  background-color: #af0;
-  width: 100%;
-  margin-bottom: 1.5rem;
-  height: 8rem; }
-  .navbar__logo {
-    display: inline-block; }
-    .navbar__logo--icon {
-      width: 5rem;
-      height: 5rem; }
+  position: fixed;
+  width: 100%; }
+  .navbar::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .navbar__logo--icon {
+    position: fixed;
+    width: 4rem;
+    height: 4rem; }
   .navbar__list {
-    display: inline-block;
+    position: absolute;
+    margin-right: 0;
+    display: flex;
     font-weight: 700;
-    left: 0;
-    align-items: end; }
+    gap: 2rem;
+    list-style: none;
+    right: 0;
+    margin-right: 1.5rem; }
   .navbar__item {
-    display: inline-block;
     text-transform: uppercase;
     background-color: aqua;
     border-radius: 2px; }
-    .navbar__item:not(:last-child) {
-      margin-right: .5rem; }
+    .navbar__item:last-child {
+      margin-right: 1rem; }
   .navbar__link {
     text-decoration: none; }
 
 .principal {
+  margin-top: 5rem;
   height: 90vh;
   width: 100%;
-  background-color: bisque; }
+  background-color: bisque;
+  width: fit-content;
+  overflow: hidden; }
   .principal__contenedor {
     height: 95%;
     background-color: #fa6;
@@ -58,3 +68,26 @@ body {
       .principal__contenedor--imagen-img {
         height: 100%;
         width: 100%; }
+
+.productos {
+  margin-top: 2rem; }
+  .productos__elementos {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: center; }
+    .productos__elementos--item {
+      width: 30%;
+      height: 8rem;
+      background-color: black;
+      color: white; }
+      .productos__elementos--item-1 {
+        color: chartreuse; }
+      .productos__elementos--item-2 {
+        color: tomato; }
+      .productos__elementos--item-3 {
+        color: blueviolet; }
+
+.footer {
+  margin-top: 3rem;
+  background-color: antiquewhite;
+  width: 100%; }

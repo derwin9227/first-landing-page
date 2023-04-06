@@ -1,7 +1,10 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
+@import "abstracts/utilities";
 
 @import "base/base";
 
 @import "layout/navbar";
 @import "layout/principal";
+@import "layout/productos";
+@import "layout/footer";

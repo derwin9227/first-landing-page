@@ -1,38 +1,42 @@
 .navbar{
-    //@include clearfix;
-    //display: fixed;
-    background-color: #af0;
+    //position: relative;
+    @include clearfix;
+    position: fixed;
+    //background-color: #af0;
     width: 100%;
-    margin-bottom: 1.5rem;
-    height: 8rem;
+    //margin-bottom: 1.5rem;
+    //height: 5rem;
 
-    &__logo{
-        display: inline-block;
-        
+    &__logo{        
 
         &--icon{
-            width: 5rem;
-            height: 5rem;
+            position: fixed;
+            width: 4rem;
+            height: 4rem;
         }
     }
 
     &__list{
-        display: inline-block;
+        position: absolute;
+        margin-right: 0;
+        display: flex;
         font-weight: 700;
-        left: 0;
-        align-items: end;
-        //text-align: end;
-        //padding-right: 1rem;
+        gap: 2rem;
+        list-style: none;
+        right: 0;
+        margin-right: 1.5rem;
+
+        
     }
 
     &__item{
-        display: inline-block;
+        //display: inline-block;
         text-transform: uppercase;
         background-color: aqua;
         border-radius: 2px;
 
-        &:not(:last-child){
-            margin-right: .5rem;
+        &:last-child{
+            margin-right: 1rem;
             //background-color: blue;
 
         }
