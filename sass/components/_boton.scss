@@ -7,6 +7,7 @@
     height: 3rem;
 
     &:hover{
+        transition: .2s;
         box-shadow: 2rem 1rem 5rem rgba($color-base, 0.3) inset;
     }
 }

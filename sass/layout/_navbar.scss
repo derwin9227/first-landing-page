@@ -1,11 +1,13 @@
 .navbar{
     //position: relative;
-    @include clearfix;
+    //@include clearfix;
     position: fixed;
     //background-color: #af0;
     width: 100%;
     //margin-bottom: 1.5rem;
     //height: 5rem;
+    z-index: 3000;
+    transition: all .2s;
 
     &__logo{        
 
@@ -31,9 +33,10 @@
 
     &__item{
         //display: inline-block;
-        text-transform: uppercase;
-        background-color: aqua;
-        border-radius: 2px;
+        text-transform: capitalize;
+        //background-color: aqua;
+        border-radius: 5px;
+        //padding: 4rem 3rem;
 
         &:last-child{
             margin-right: 1rem;
@@ -44,6 +47,6 @@
 
     &__link{
         text-decoration: none;
-        
+        padding: .5rem .5rem;        
     }
 }
