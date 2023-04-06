@@ -5,10 +5,10 @@
 
 
     &__contenedor{
-        height: 90%;
+        height: 95%;
         background-color: #fa6;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 40% 60%;
         gap: 2rem;
         
 
@@ -21,7 +21,7 @@
             overflow: hidden;
 
             &-img{
-                height: 90%;
+                height: 100%;
                 width: 100%;
             }
         }

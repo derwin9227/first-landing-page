@@ -17,11 +17,19 @@ body {
 
 .navbar {
   background-color: #af0;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 1.5rem;
+  height: 8rem; }
+  .navbar__logo {
+    display: inline-block; }
+    .navbar__logo--icon {
+      width: 5rem;
+      height: 5rem; }
   .navbar__list {
+    display: inline-block;
     font-weight: 700;
-    text-align: end;
-    padding-right: 1rem; }
+    left: 0;
+    align-items: end; }
   .navbar__item {
     display: inline-block;
     text-transform: uppercase;
@@ -37,10 +45,10 @@ body {
   width: 100%;
   background-color: bisque; }
   .principal__contenedor {
-    height: 90%;
+    height: 95%;
     background-color: #fa6;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 40% 60%;
     gap: 2rem; }
     .principal__contenedor--texto {
       background-color: #ffaf00; }
@@ -48,5 +56,5 @@ body {
       background-color: #ffa0ff;
       overflow: hidden; }
       .principal__contenedor--imagen-img {
-        height: 90%;
+        height: 100%;
         width: 100%; }

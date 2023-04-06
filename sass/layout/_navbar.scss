@@ -3,11 +3,26 @@
     //display: fixed;
     background-color: #af0;
     width: 100%;
+    margin-bottom: 1.5rem;
+    height: 8rem;
+
+    &__logo{
+        display: inline-block;
+        
+
+        &--icon{
+            width: 5rem;
+            height: 5rem;
+        }
+    }
 
     &__list{
+        display: inline-block;
         font-weight: 700;
-        text-align: end;
-        padding-right: 1rem;
+        left: 0;
+        align-items: end;
+        //text-align: end;
+        //padding-right: 1rem;
     }
 
     &__item{
