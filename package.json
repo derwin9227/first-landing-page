@@ -1,23 +1,26 @@
 {
-  "name": "landing",
-  "version": "1.0.0",
-  "description": "��#\u0000 \u0000f\u0000i\u0000r\u0000s\u0000t\u0000-\u0000l\u0000a\u0000n\u0000d\u0000i\u0000n\u0000g\u0000-\u0000p\u0000a\u0000g\u0000e\u0000\r\u0000 \u0000",
-  "main": "index.js",
+  "name": "first-landing-page",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/estilos.css -w"
-    
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/derwin9227/first-landing-page.git"
-  },
-  "author": "miguel vera - derwin hernandez",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/derwin9227/first-landing-page/issues"
-  },
-  "homepage": "https://github.com/derwin9227/first-landing-page#readme",
   "dependencies": {
-    "node-sass": "^8.0.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^4.0.0-beta.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "vite": "^4.3.0"
   }
 }
