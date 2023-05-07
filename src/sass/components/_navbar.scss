@@ -1,0 +1,35 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    color: $color-primary;
+    justify-content: end;
+
+    &__list{
+        display: flex;
+        gap: .5rem;
+        margin-top: .9rem;
+        margin-right: .9rem;
+        align-items: end;
+        align-content: end;
+        text-align: end;
+
+        &-item{
+            display: flex;
+            list-style: none;
+            padding: 5px;
+            border-radius: 10px;
+            border-left: 1px solid white;
+            &:hover{
+                border-right: 1px solid white;
+                transform: scale(1.05) translateY(-2px);
+            }
+
+            &_link{
+                text-decoration: none;
+                &:visited{
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}

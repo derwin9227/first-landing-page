@@ -1,0 +1,14 @@
+//font
+$font: Helvetica, sans-serif;
+
+//variables
+$color-primary: #bbc;
+
+//base
+@import "./base/reset";
+@import "./base/typography";
+
+//components
+@import "./components/navbar";
+//sections
+@import "./sections/home"
