@@ -1,5 +1,5 @@
 import './sass/main.scss';
-import {Navbar, Home, Skills, About, Footer} from './components/index';
+import {Navbar, Home, Skills, Projects, About, Footer} from './components/index';
 
 function App() {
 
@@ -9,6 +9,7 @@ function App() {
       <main>
         <Home />
         <Skills />
+        <Projects />
         <About />
       </main>
       <Footer />

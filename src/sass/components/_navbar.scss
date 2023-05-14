@@ -2,17 +2,16 @@
     width: 100%;
     display: flex;
     color: $color-primary;
-    justify-content: end;
+    justify-content: center;
 
     &__list{
         display: flex;
-        gap: .5rem;
+        gap: 1rem;
         margin-top: .9rem;
         margin-right: .9rem;
         align-items: end;
         align-content: end;
         text-align: end;
-
         &-item{
             display: flex;
             list-style: none;
@@ -22,6 +21,11 @@
             &:hover{
                 border-right: 1px solid white;
                 transform: scale(1.05) translateY(-2px);
+            }
+            &:active{
+                transform: translateY(1px);
+                border-right: 2px solid #00ff00;
+                border-left: 2px solid #00ff00;
             }
 
             &_link{

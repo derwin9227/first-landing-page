@@ -2,12 +2,16 @@
     height: 90vh;
     width: 95vw;
     display: grid;
-    grid-template-columns: 35% 65%;
-    margin: auto;
+    grid-template-columns: auto auto;
     justify-content: center;
-
+    margin: auto;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    
     &__text{
-        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         h1{
             margin-bottom: 1rem;
         }
