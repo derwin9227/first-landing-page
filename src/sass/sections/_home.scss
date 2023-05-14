@@ -1,9 +1,33 @@
 .home{
-    display: flex;
-    border: 1px solid white;
     height: 90vh;
     width: 95vw;
+    display: grid;
+    grid-template-columns: 35% 65%;
     margin: auto;
     justify-content: center;
-    gap: 2rem;
+
+    &__text{
+        padding: 1rem;
+        h1{
+            margin-bottom: 1rem;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+
+    &__img{
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-item{
+            height: 75%;
+            width: 85%;
+            border-radius: 50%;
+            box-shadow: 0 0 12px .5px $color-primary;
+        }
+    }
 }

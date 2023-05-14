@@ -1,0 +1,10 @@
+export {default as alessio} from './alessio-soggetti-unsplash.svg';
+export {default as clark} from './clark-tibbs-unsplash.jpg';
+export {default as cleveland} from './the-cleveland-unsplash.jpg';
+export {default as coding} from './coding.svg'
+export {default as codingWeb} from './web-design.jpg'
+export {default as html5} from './html5.svg'
+export {default as css3} from './css3.svg'
+export {default as javascript} from './javascript.svg'
+export {default as react} from './react-2.svg'
+export {default as sass} from './sass-1.svg'
