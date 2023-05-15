@@ -2,18 +2,31 @@
     height: 90vh;
     width: 95vw;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     justify-content: center;
     margin: auto;
     margin-bottom: 1rem;
     overflow: hidden;
+    font-family: $font;
+    color: $color-primary;
     
     &__text{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        h1{
-            margin-bottom: 1rem;
+
+        &-items{
+            h1{
+                margin-bottom: 1rem;
+            }
+            span{
+                display: block;
+                width: 20ch;
+                white-space: nowrap;
+                border-right: 2px solid;
+                overflow: hidden;
+                animation: typing 2s steps(19) infinite, blink .2s infinite step-end alternate;
+            }
         }
         p{
             text-align: justify;
@@ -23,7 +36,8 @@
     &__img{
         overflow: hidden;
         height: 100%;
-        width: 100%;
+        //width: 100%;
+        min-width: 250px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -34,4 +48,23 @@
             box-shadow: 0 0 12px .5px $color-primary;
         }
     }
+}
+
+@media screen and (max-width: 550px){
+    .home{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
+
+        &__text-items{
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@keyframes typing{
+    from {width: 0}
+}
+@keyframes blink{
+    50% { border-color: transparent}
 }

@@ -1,9 +1,9 @@
 .navbar{
     width: 100%;
     display: flex;
-    color: $color-primary;
     justify-content: center;
-
+    font-family: $font;
+    color: red;
     &__list{
         display: flex;
         gap: 1rem;
@@ -30,6 +30,7 @@
 
             &_link{
                 text-decoration: none;
+                color: $color-primary;
                 &:visited{
                     color: $color-primary;
                 }
