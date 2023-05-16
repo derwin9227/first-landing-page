@@ -6,11 +6,11 @@ const urlLinks = {
     modern: 'https://bank-modern-ten.vercel.app/'
 }
 
-const Card = ({image, alt, url}) => (
+const Card = ({image, alt, url, desc}) => (
     <div className='projects__list-item'>
         <h3>{alt}</h3>
         <a href={url} target='_blank'><img src={image} alt={alt} /></a>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <a href={url} target='_blank'><p>{desc}</p></a>
     </div>
 )
 
@@ -21,9 +21,9 @@ const Projects = () => {
             <h2>Projects</h2>
         </div>
         <div className="projects__list">
-            <Card image={natours} alt={'natours'} url={urlLinks.natours}/>
-            <Card image={modern} alt={'modern bank'} url={urlLinks.modern}/>
-            <Card image={gpt3} alt={'GPT-3'} url={urlLinks.gpt3}/>
+            <Card image={natours} alt={'natours'} url={urlLinks.natours} desc={"Learn more about natours..."}/>
+            <Card image={modern} alt={'modern bank'} url={urlLinks.modern} desc={"Modern bank web..."}/>
+            <Card image={gpt3} alt={'GPT-3'} url={urlLinks.gpt3} desc={"An amazing OpenAI web..."}/>
         </div>
     </section>
   )

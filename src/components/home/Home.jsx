@@ -9,8 +9,7 @@ const Home = () => {
           <h1>
             Derwin Hernandez<br/>
           </h1>
-          <span>Front End Developer</span>
-        </div>
+          <span>Frontend Developer...</span></div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsa facilis, aliquid nemo tempore architecto nostrum reprehenderit odit qui quis corporis consectetur nisi dolorum iure mollitia dolor, illum, unde a.</p>
       </div>
       <div className='home__img'>
