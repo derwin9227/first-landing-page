@@ -1,0 +1,27 @@
+.footer{
+    font-family: $font;
+    width: 95vw;
+    height: 35vh;
+    border: 1px solid white;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    &__heading{
+        border: 1px solid tomato;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        //text-align: center;
+        //margin: auto;
+        //align-items: center;
+        //align-content: center;
+        
+    }
+    &__items{
+        border: 1px solid dodgerblue;
+        margin: 5px;
+        height: 90%;
+    }
+}

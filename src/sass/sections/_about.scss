@@ -54,7 +54,10 @@
                 margin: auto;
                 width: 35%;
                 margin-top: 5px;
-                /* background-image: linear-gradient(to right, red, blue); */
+                filter: brightness(0) saturate(100%) invert(77%) sepia(13%) saturate(221%) hue-rotate(201deg) brightness(96%) contrast(94%);
+                &:hover{
+                    filter: brightness(0) saturate(90%) invert(90%) sepia(50%) saturate(1000%) hue-rotate(1500deg) brightness(90%) contrast(90%);
+                }
             }
         }
     }
