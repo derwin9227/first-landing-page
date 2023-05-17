@@ -38,7 +38,7 @@
                 z-index: -1;
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(45deg,$color-secondary,  black, white, yellow, green, $color-primary, deeppink, green);
+                background: linear-gradient(45deg, $color-secondary,  black, white, yellow, green, $color-primary, deeppink, green);
                 background-size: 800%;
                 border-radius: 10px;
                 filter: blur(2px);
@@ -50,14 +50,14 @@
                 text-align: center;
                 font-size: 1rem;
             }
+            &:hover img{
+                filter: brightness(0) saturate(90%) invert(90%) sepia(50%) saturate(1000%) hue-rotate(1500deg) brightness(90%) contrast(90%);
+            }
             img{
                 margin: auto;
                 width: 35%;
                 margin-top: 5px;
                 filter: brightness(0) saturate(100%) invert(77%) sepia(13%) saturate(221%) hue-rotate(201deg) brightness(96%) contrast(94%);
-                &:hover{
-                    filter: brightness(0) saturate(90%) invert(90%) sepia(50%) saturate(1000%) hue-rotate(1500deg) brightness(90%) contrast(90%);
-                }
             }
         }
     }

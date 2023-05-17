@@ -48,9 +48,10 @@
             width: 85%;
             border-radius: 50%;
             box-shadow: 0 0 12px .5px $color-primary;
+            filter: brightness(80%);
         }
         &:hover{
-            filter:blur(3px) brightness(90%);
+            filter: invert(80%) sepia(50%) hue-rotate(150deg) brightness(70%);
         }
     }
 }

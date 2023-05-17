@@ -9,6 +9,8 @@ export {default as css3} from './css3.svg';
 export {default as javascript} from './javascript.svg';
 export {default as react} from './react-2.svg';
 export {default as sass} from './sass-1.svg';
+export {default as github} from './github.svg';
+export {default as linkedin} from './linkedin.svg';
 
 export {default as natours} from './natours.jpg';
 export {default as gpt3} from './gpt3.jpg';
