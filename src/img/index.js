@@ -14,4 +14,4 @@ export {default as linkedin} from './linkedin.svg';
 
 export {default as natours} from './natours.jpg';
 export {default as gpt3} from './gpt3.jpg';
-export {default as modern} from './modern-bank.jpg';
+export {default as esoterismo} from './esoterismo.png';
